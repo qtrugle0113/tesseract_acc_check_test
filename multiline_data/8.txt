@@ -1,0 +1,66 @@
+Mẫu số: 01GTKT0/001
+Ký hiệu: EY/17E
+Số: 0062192
+
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE)
+
+Ngày (date) 05 tháng (month) 04 năm (year) 2021
+
+Đơn vị bán hàng: CÔNG TY CỔ PHẦN CÔNG NGHỆ TIN HỌC EFY VIỆT NAM
+Mã số thuế: 0102519041
+
+Địa chỉ: Tầng 9, tòa nhà Sannam, số 78 phố Duy Tân, P. Dịch Vọng Hậu, Q. Cầu Giấy, TP. Hà Nội
+Điện thoại: 02462872290
+
+Email: thuanhv@efy.com.vn | Website: efy.com.vn / baohiemxahoidientu.vn / ihoadon.vn
+
+Họ tên người mua hàng (Customer's name):
+Tên đơn vị (Company): Công ty ABC
+
+Mã số thuế(Tax code): 8888888888
+Địa chỉ(Address): Hậu Giang, Phường 4, Quận Tân Bình, TP Hồ Chí Minh
+Hình thức thanh toán (Payment method):TM/CK Số tài khoản (Bank Account number):
+
+STT | Tên hàng hóa, dịch vụ | Đơn vị | Thuế | Đơn giá | Thành tiền
+tính | suất | chưa có thuế
+(item) (Description) (Unit) (VAT rate) (Quantity) (Unit Price) (Amount)
+1 2 3 4 5 6 7=5x6
+1 Máy in Canon Chiếc - 05 2.000.000 10.000.000
+(Xuất hàng trả lại do chất lượng kém)
+
+Tổng hợp Thuế suất | Trị giá chưa có thuế GTGT | Tiền thuế GTGT | Trị giá thanh toán
+
+(In summany) (VAT rate) | (Amount excluding VAT) (VAT amount) (Amount including VAT)
+Hàng hóa không chịu thuế GTGT: - 10.000.000 - 10.000.000
+Hàng hóa chịu thuế suất: 0% - - -
+Hàng hóa chịu thuế suất: 5% - - -
+Hàng hóa chịu thuế suất 10% 1.000.000 - 1.000.000
+Tổng cộng tiền thanh toán: 11.000.000 - 11.000.000
+
+Số tiền viết bằng chữ: Năm trăm nghìn đồng chẵn.
+
+Người thực hiện chuyển đổi (Converter)
+(Ký, ghi rõ họ tên)
+(Sien & full name)
+
+Người mua hàng (Buyer)
+(Ký, ghi rõ họ tên)
+(Sign & full name)
+
+Người bán hàng (Seller)
+(Ký, ghi rõ họ tên)
+(Sign & full name)
+
+Signture valid
+Người ký: CÔNG TY CỔ PHẦN CÔNG NGHỆ THÔNG TIN
+HỌC EFY VIỆT NAM
+Học Ery vie nam
+Ngày ký: 05/04/2021 11:36:01
+
+(Cần kiểm tra, đối chiếu khi lập, giao dịch hóa đơn)
+
+(Xuất bởi phần mềm EFY-iHOADON, EFY Việt Nam JSC, MST: 0102519041 -hondon.vn - 1900 6142 / 1900 6139)
+
+Hóa đơn Điện tử (HĐĐT) được tra cứu trực tuyến tại http://tracuu.ihoadon.vn. Mã tra cứu HĐĐT này:
+
