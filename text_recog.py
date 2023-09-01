@@ -4,18 +4,18 @@ from acc import *
 
 def get_accuracy(img, lang1, lang2):
     path = img
-    text_best = pytesseract.image_to_string(Image.open('hw_data/' + path), lang=lang1, config='--psm 13')
+    text_best = pytesseract.image_to_string(Image.open('unseen_hw_data/' + path), lang=lang1, config='--psm 13')
 
-    text_train = pytesseract.image_to_string(Image.open('hw_data/' + path), lang=lang2, config='--psm 13')
+    text_train = pytesseract.image_to_string(Image.open('unseen_hw_data/' + path), lang=lang2, config='--psm 13')
 
-    with open("vie_train_hw_result/" + path.replace('png', 'txt'), "w", encoding="utf-8") as file:
+    with open("unseen_vie_train_result/" + path.replace('png', 'txt'), "w", encoding="utf-8") as file:
         file.write(text_best)
 
-    with open("vie_hw_hw_result/" + path.replace('png', 'txt'), "w", encoding="utf-8") as file:
+    with open("unseen_vie_hw_result/" + path.replace('png', 'txt'), "w", encoding="utf-8") as file:
         file.write(text_train)
 
-    acc_best = calculate_accuracy("vie_train_hw_result/" + path.replace('png', 'txt'), "hw_data/" + path.replace('png', 'txt'))
-    acc_train = calculate_accuracy("vie_hw_hw_result/" + path.replace('png', 'txt'), "hw_data/" + path.replace('png', 'txt'))
+    acc_best = calculate_accuracy("unseen_vie_train_result/" + path.replace('png', 'txt'), "unseen_hw_data/" + path.replace('png', 'gt.txt'))
+    acc_train = calculate_accuracy("unseen_vie_hw_result/" + path.replace('png', 'txt'), "unseen_hw_data/" + path.replace('png', 'gt.txt'))
 
     return acc_best, acc_train
 

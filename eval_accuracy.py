@@ -2,7 +2,7 @@ import os
 import statistics
 from text_recog import *
 
-path = 'hw_data'
+path = 'unseen_hw_data'
 
 img_lists = list(file for file in os.listdir(path) if file.endswith(".png"))
 
