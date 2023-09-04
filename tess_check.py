@@ -22,6 +22,7 @@ args = vars(ap.parse_args())
 
 # 텍스트 유사도 계산: 방법 0
 def accuracy_0(text, label):
+    print('accuracy_0')
     text_words = text.split()
     ground_truth_words = label.split()
 
@@ -34,6 +35,7 @@ def accuracy_0(text, label):
 
 # 텍스트 유사도 계산: 방법 1
 def accuracy_1(text, label):
+    print('accuracy_1')
     intersection_cardinality = len(set.intersection(*[set(text), set(label)]))
     union_cardinality = len(set.union(*[set(text), set(label)]))
     accuracy = intersection_cardinality / float(union_cardinality)
@@ -43,6 +45,7 @@ def accuracy_1(text, label):
 
 # 텍스트 유사도 계산: 방법 2
 def accuracy_2(text, label):
+    print('accuracy_2')
     answer_bytes = bytes(label, 'utf-8')
     input_bytes = bytes(text, 'utf-8')
     answer_bytes_list = list(answer_bytes)
@@ -56,6 +59,7 @@ def accuracy_2(text, label):
 
 # 텍스트 유사도 계산: 방법 3
 def accuracy_3(text, label):
+    print('accuracy_3')
     # 텍스트에 대한 TF-IDF 벡터 만들기
     vectorizer = TfidfVectorizer()
     tfidf_matrix = vectorizer.fit_transform([text, label])
@@ -68,6 +72,7 @@ def accuracy_3(text, label):
 
 # 텍스트 유사도 계산: 방법 4
 def accuracy_4(text, label):
+    print('accuracy_4')
     # 텍스트에 대한 TF-IDF 벡터 만들기
     vectorizer = TfidfVectorizer()
     tfidf_matrix = vectorizer.fit_transform([text, label])
@@ -83,6 +88,7 @@ def accuracy_4(text, label):
 
 # 텍스트 유사도 계산: 방법 5
 def accuracy_5(text, label):
+    print('accuracy_5')
     # 텍스트에 대한 TF-IDF 벡터 만들기
     vectorizer = TfidfVectorizer()
     tfidf_matrix = vectorizer.fit_transform([text, label])
@@ -97,34 +103,24 @@ def accuracy_5(text, label):
 
 
 text = pytesseract.image_to_string(Image.open(args['image']), lang=args['language'], config=f"--psm {args['pageseg']}")
-label_path = '.'.join(args['image'].split('.')[:-1]) + '.gt.txt'
+label_path = '.'.join(args['image'].split('.')[:-1]) + '.txt'
 with open(label_path, 'r', encoding='utf-8') as file:
     label = file.read()
 # acc = accuracy_0(text, label)
 if args['accuracy'] == 0:
     acc = accuracy_0(text, label)
 elif args['accuracy'] == 1:
-    if accuracy_4(text, label) == 1.0:
-        acc = 1.0
-    else:
-        acc = accuracy_1(text, label)
-
+    acc = accuracy_1(text, label)
 elif args['accuracy'] == 2:
-    if accuracy_4(text, label) == 1.0:
-        acc = 1.0
-    else:
-        acc = accuracy_2(text, label)
+    acc = accuracy_2(text, label)
 elif args['accuracy'] == 3:
-    if accuracy_4(text, label) == 1.0:
-        acc = 1.0
-    else:
-        acc = accuracy_3(text, label)
+    acc = accuracy_3(text, label)
 elif args['accuracy'] == 4:
     acc = accuracy_4(text, label)
 elif args['accuracy'] == 5:
     acc = accuracy_5(text, label)
 else:
-    acc = accuracy_3(text, label)
+    acc = accuracy_1(text, label)
 
 
 print(f"{'-Label:':<10}", label)
