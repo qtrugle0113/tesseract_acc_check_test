@@ -1,8 +1,8 @@
 # 필요한 패키지 가져 오기
 import os
-import re
 import pytesseract
 import argparse
+import glob
 import statistics
 import numpy as np
 from PIL import Image
@@ -11,10 +11,25 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity, euclidean_distances, manhattan_distances
 from fuzzywuzzy import fuzz
 
+ap = argparse.ArgumentParser(description='Evaluate Tesseract accuracy')
+
+ap.add_argument('-i', '--image', nargs='+', type=str, required=True,
+                help="path to image")
+ap.add_argument('-l', '--language', type=str, default='eng',
+                help="recognition language")
+ap.add_argument('-psm', '--pageseg', type=int, default=3,
+                help="image segmentation mode")
+ap.add_argument('-a', '--accuracy', type=int, default=1,
+                help="accuracy checking method")
+ap.add_argument('-v', '--verbose', action='store_true',
+                help="show details for every single image")
+
+# Convert Namespace(result of ap.parse_args() to dict type)
+args = vars(ap.parse_args())
+
 
 # 텍스트 유사도 계산: 방법 0 (예측 성공 단어 / 총 단어)
 def accuracy_0(text, label):
-    print('0')
     text_words = text.split()
     ground_truth_words = label.split()
 
@@ -27,7 +42,6 @@ def accuracy_0(text, label):
 
 # 텍스트 유사도 계산: 방법 1 (Jaccard Similarity)
 def accuracy_1(text, label):
-    print('1')
     intersection_cardinality = len(set.intersection(*[set(text), set(label)]))
     union_cardinality = len(set.union(*[set(text), set(label)]))
     accuracy = intersection_cardinality / float(union_cardinality)
@@ -37,7 +51,6 @@ def accuracy_1(text, label):
 
 # 텍스트 유사도 계산: 방법 2 (Sequence Matcher)
 def accuracy_2(text, label):
-    print('2')
     answer_bytes = bytes(label, 'utf-8')
     input_bytes = bytes(text, 'utf-8')
     answer_bytes_list = list(answer_bytes)
@@ -51,16 +64,14 @@ def accuracy_2(text, label):
 
 # 텍스트 유사도 계산: 방법 3 (Levenshtein Distance)
 def accuracy_3(text, label):
-    print('3')
     similarity = float(fuzz.ratio(text, label)) / 100
     return similarity
 
 
 # 텍스트 유사도 계산: 방법 4 (Cosine Similarity)
 def accuracy_4(text, label):
-    print('4')
     # 텍스트에 대한 TF-IDF 벡터 만들기
-    vectorizer = TfidfVectorizer(token_pattern=r"(?u)\b\w\w+\b|[\w\W]+")
+    vectorizer = TfidfVectorizer(token_pattern=r'\S+')  # r'\S+|[\W]+')    #r"(?u)\b\w\w+\b|[\w\W]+")
     tfidf_matrix = vectorizer.fit_transform([text, label])
 
     # 2개 텍스트 간의 cosine similarity 계산
@@ -71,9 +82,8 @@ def accuracy_4(text, label):
 
 # 텍스트 유사도 계산: 방법 5 (Euclidean Distance)
 def accuracy_5(text, label):
-    print('5')
     # 텍스트에 대한 TF-IDF 벡터 만들기
-    vectorizer = TfidfVectorizer()
+    vectorizer = TfidfVectorizer(token_pattern=r'\S+')
     tfidf_matrix = vectorizer.fit_transform([text, label])
 
     # 정규화
@@ -87,9 +97,8 @@ def accuracy_5(text, label):
 
 # 텍스트 유사도 계산: 방법 6 (Manhattan Distance)
 def accuracy_6(text, label):
-    print('6')
     # 텍스트에 대한 TF-IDF 벡터 만들기
-    vectorizer = TfidfVectorizer()
+    vectorizer = TfidfVectorizer(token_pattern=r'\S+')
     tfidf_matrix = vectorizer.fit_transform([text, label])
 
     # 정규화
@@ -101,46 +110,59 @@ def accuracy_6(text, label):
     return 1 - similarity[0][0]
 
 
-path = 'test_data/'
-lang = 'vie_train'
-
-img_list = [file for file in os.listdir(path) if re.search(r'\.(png|jpg|jpeg|tif)$', file, re.I)]
-label_list = [file for file in os.listdir(path) if re.search(r'\.(txt|gt.txt)$', file, re.I)]
-
-recog_text_list = []
-label_text_list = []
 acc_list = []
 
-# for label in label_list:
-#     with open(path + label, 'r', encoding="utf-8") as file:
-#         text = file.read()
-#         label_text_list.append(text)
+for image in args['image']:
+    files = glob.glob(image)
 
-# for img in img_list:
-#     predict_text = pytesseract.image_to_string(Image.open(path + img), lang=lang, config='--psm 13')
-#
-#     img_name = img.rsplit('.', 1)[0]
-#     if os.path.exists(path + img_name + '.txt'):
-#         label = path + img_name + '.txt'
-#     elif os.path.exists(path + img_name + '.gt.txt'):
-#         label = path + img_name + '.gt.txt'
-#     else:
-#         print(f"Label file of {img} is not exist")
-#         exit(1)
-#
-#     with open(label, 'r', encoding="utf-8") as file:
-#         label_text = file.read()
-#     print('Label:', label_text, ' - Predict:', predict_text)
-#     acc_list.append(accuracy_6(predict_text, label_text))
+    if not files:
+        print(f"{image} is not exist")
+        exit(1)
 
-# print(img_list)
-# print(acc_list)
-# print(statistics.mean(acc_list))
+    for idx, img in enumerate(files):
+        predict_text = pytesseract.image_to_string(Image.open(img), lang=args['language'],
+                                                   config=f"--psm {args['pageseg']}").rstrip('\n')
 
-# test_txt = pytesseract.image_to_string(Image.open(path + '0.jpg'), lang='vie_train', config='--psm 13')
-#
-# with open(path + '0.txt', 'r', encoding="utf-8") as file:
-#     test_label = file.read()
-# print('Label:'+test_label)
-# print('Predict:'+test_txt.rstrip('\n'))
-print(accuracy_4('le quang trugn','le quang trung'))
+        img_name = img.rsplit('.', 1)[0]
+        if os.path.exists(img_name + '.txt'):
+            label = img_name + '.txt'
+        elif os.path.exists(img_name + '.gt.txt'):
+            label = img_name + '.gt.txt'
+        else:
+            print(f"Label file of {img} is not exist")
+            exit(1)
+
+        with open(label, 'r', encoding="utf-8") as file:
+            label_text = file.read()
+
+        if args['verbose']:
+            print('\n   ' + img + ':')
+            print(f"{'-Label:':<10}", label_text)
+            print(f"{'-Predict:':<10}", predict_text)
+
+        if args['accuracy'] == 0:
+            acc = accuracy_0(predict_text, label_text)
+        elif args['accuracy'] == 1:
+            acc = accuracy_1(predict_text, label_text)
+        elif args['accuracy'] == 2:
+            acc = accuracy_2(predict_text, label_text)
+        elif args['accuracy'] == 3:
+            acc = accuracy_3(predict_text, label_text)
+        elif args['accuracy'] == 4:
+            acc = accuracy_4(predict_text, label_text)
+        elif args['accuracy'] == 5:
+            acc = accuracy_5(predict_text, label_text)
+        elif args['accuracy'] == 6:
+            acc = accuracy_6(predict_text, label_text)
+        else:
+            acc = accuracy_1(predict_text, label_text)
+
+        if args['verbose']:
+            print(f"{'-Accuracy:':<10}", acc)
+
+        acc_list.append(acc)
+
+# if args['verbose']:
+#     print(f"\n{'-Acc List:':<10}", acc_list)
+print('--------DONE--------')
+print(f"{'-Avg Acc:':<10}", statistics.mean(acc_list))
