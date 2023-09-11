@@ -1,0 +1,35 @@
+CÔNG TY CP ĐẦU TƯ CÔNG NGHỆ VÀ THƯƠNG MẠI SOFTDREAMS
+Mã số thuế (Tax code): 0105987432-999
+Đia chỉ (Address): Nhà khách ATS, số 8 Phạm Hùng, P.Mễ Trì, Q.Nam Từ Liêm, Hà Nội
+SOFT DREAMS Điện thoại (Tell): 0981 772 388 Fax: 0919 510 089
+Make IT Simple Email: contact@sotdreams.vn
+Tài khoản (A/C number): 0123458789123 Ngân hàng TMCP Ngoại Thương Việt Nam
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG Mẫu số (Form): 01GTKT0/006
+(VAT INVOICE) Ký hiệu (Serial): AA/19E
+Ngày (Date) tháng (month) năm (year) Số(No): 0000000
+
+Họ tên người mua hàng (Buyer):
+Tên đơn vị (Company's name):
+Mã số thuế (Tax code):
+Địa chỉ (Address):
+Hình thức thanh toán (Payment method): Số tài khoản (A/C number):
+
+STT Tên hàng hóa, dịch vụ Đơn vị tính Số lượng Đơn giá Thành tiền trước thuế Thuế GTGT (VAT) Tổng tiền thanh toán
+(No) (Description) (Unit) (Quantity) (Unit price) (Amount) % Tiền thuế (VAT Amount) (Total amount)
+1 2 3 4 5 6=4x5 7 8 9=6+8
+1
+
+Tổng cộng (Total amount):
+Số tiền viết bằng chữ (Amount in words):
+
+Người mua hàng (Buyer) Người bán hàng (Seller)
+Mẫu
+Ký bởi: CÔNG TY CP ĐẦU TƯ CÔNG
+NGHỆ VÀ THƯƠNG MẠI SOFTDREAMS
+Ký ngày:
+
+Trang tra cứu: Mã tra cứu:
+
+(Cần kiểm tra, đối chiếu khi lập, giao, nhận hóa đơn)
+
+Đơn vị cung cấp giải pháp: Công ty cổ phần đầu tư công nghệ và thươn mại SOFTDREAMS, MTS: 0105987432, http://easyinvoice.vn/

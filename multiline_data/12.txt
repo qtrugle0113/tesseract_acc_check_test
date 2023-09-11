@@ -1,0 +1,51 @@
+Mẫu số (Form): 01GTKT0_057
+HÓA ĐƠN GIÁ TRỊ GIÁ TĂNG
+(VAT INVOICE) Ký hiệu (Serial): AB/18E
+Số (No.): 0000015
+
+GIẢI PHÁP HÓA ĐƠN THÔNG MINH Bản thể hiện của hóa đơn điện tử
+(Electronic invoice display)
+
+Ngày (date) 07 tháng (month) 06 năm (year) 2018
+
+Đơn vị bán hàng (Seller): TẬP ĐOÀN VIỄN THÔNG QUÂN ĐỘI
+
+Mã số thuế /(Tax code): 0100109106
+
+Địa chỉ (Address): Số 21 Cát Linh, phường Cát Linh - Quận Ba Đình - Thành Phố Hà Nội - Việt Nam
+
+Điện thoại (Tel): 0979272672 Fax: 19001570198 Website: www.vietcombank.com.vn
+
+Số tài khoản (Account No.): 123456789123478 Ngân hàng (Bank): Ngân hàng Quân Đội MB - Chi nhánh huyện Yên
+Sơn - Tuyên Quang
+
+Họ tên người mua hàng (Customer's name): Nguyễn Văn A
+Tên đơn vị (Company's name): Công ty ABC
+
+Mã số thuế (Tax code):
+
+Địa chỉ (Address): Số nhà 1, Phường B, Thành phố Hà Nội
+Hình thức thanh toán (Payment method): TM/CK
+
+Ghi chú (Note):
+
+STT Tên hàng hóa, dịch vụ Đơn vị tính Số lượng Đơn giá Thành tiền
+(No.) (Description) (Unit) (Quantity) (Unit price) (Amount)
+1 2 3 4 5 6=4x5
+1 Sản phẩm 01 chiếc 10 576.000 5.760.000
+2 Sản phẩm 02 Cái 20 500.000 10.000.000
+Cộng tiền hàng (Total amount): 15.760.000
+Thuế suất GTGT: (VAT rate): 10% Tiền thuế GTGT (VAT amount): 1.576.000
+TỔNG CỘNG TIỀN THANH TOÁN (Total payment): 17.336.000.
+
+Số tiền viết bằng chữ (Amount in words): Mười bảy triệu ba trăm ba mươi sáu nghìn đồng
+
+Người mua hàng (Buyer) Người bán hàng (Seller)
+
+Signature valid
+Ký bởi TẬP ĐOÀN VIỄN THÔNG QUÂN ĐỘI
+Ký ngày 07/06/2018
+
+Đơn vị cung cấp dịch vụ Hóa đơn điện tử: Tập đoàn Công nghiệp - Viễn thông Quân đội(Viettel). MST: 0100109106
+Tra cứu hóa đơn điện tử tại Website: https://sinvoice.viettel.vn/tracuuhoadon. Mã số bí mật:U62U0U51O1
+

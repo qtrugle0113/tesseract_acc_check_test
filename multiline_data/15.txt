@@ -1,0 +1,44 @@
+Tổng Công ty Điện lực TP Hà Nội - Công ty Điện lực Thanh Trì
+
+Mã số thuế (Tax Code): 0100101114-008
+
+Địa chỉ (Address): Số 155 đường Phan Trọng Tuệ TTVÐ H.Thanh Trì TP Hà Nội Việt Nam
+
+Điện thoại(Phone Number): 19001288
+
+Thông tin thanh toán (Payment Information): Công ty Điện lực Thanh Trì - Số TK: 0151000474008 - Tại NH:
+NHTMCP An Bình
+
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG
+(VAT INVOICE) Ký hiệu (Serial): 1K22TCA
+Bản thể hiện của hóa đơn điện tử Số (No): 590085
+
+(Electronic invoice display)
+Ngày (Date) 07 tháng (month) 05 năm (year) 2022
+
+Họ tên người mua hàng (Buyer name): Nguyễn Văn A - PD06000048912
+Tên đơn vị (Company name): Nguyễn Văn A
+Mã số thuế (Tax code):
+Địa chi (Address): Đội 2 Xã Tả Thanh Oai Thanh Trì
+Số tài khoản (Account No):
+Hình thức thanh toán (Payment method): TM/CK Đồng tiền thanh toán (Payment currency):VND
+STT Tên hàng hóa, dịch vụ ĐVT Số lượng Đơn giá Thành tiền
+(No.) (Description) (Unit) (Quantity) (Unit price) (Amount)
+A B C 1 2 3=1x2
+Điện tiêu thụ - Kỳ hóa đơn: Tháng 5/2022 từ 07/04/2022
+1 đến 06/05/2022 kWh 199 - 369.986
+(kèm theo bảng kê số 11818865, ngày 07 tháng 05 năm
+2022)
+Cộng tiền hàng (Total amount): 369.986
+Thuế suất GTGT (VAT rate): 8% Tiền thuế GTGT (VAT amount): 29.599
+Tổng cộng tiền thanh toán (Total
+Tỷ giá (Exchanged rate): payment): 399.585
+Số tiền bằng chữ (Amount in words): Ba trăm chín mươi chín nghìn năm trăm tám mươi lăm đồng.
+
+Người mua hàng (Buyer) Người bán hàng (Seller)
+
+Được ký bởi: CÔNG TY ĐIỆN LỰC THANH TRÌ
+Ngày ký: 07/05/2022 10:26:47
+
+Khởi tạo từ (Created by) Phần mềm CMIS - Công ty (Company): Viễn thông điện lực và công nghệ thông tin - EVN - MST (Tax code): 0100100079-010
+

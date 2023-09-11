@@ -1,0 +1,32 @@
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG Mẫu số: 01GTKT0/001
+(Hóa đơn chuyển đổi từ hóa đơn điện tử) Ký hiệu: HM/17E
+Ngày 16 tháng 10 năm 2017 Số: 0000003
+Đơn vị bán hàng: Công ty cổ phần ABC
+Mã số thuế: 0101243150
+Địa chỉ: Tầng 9 Technosoft, Duy Tân, Cầu Giấy, Hà Nội
+Điện thoại: 04 3795 9595 Số tài khoản: 010236542365
+Họ tên người mua hàng: Nguyễn Văn Tiến
+Tên đơn vị: Công ty TNHH Bảo Ngọc
+Mã số thuế: 0101243150
+Địa chỉ: 123 Trần Bình - Mai Dịch - Cầu Giấy - Hà Nội
+
+Hình thức thanh toán: TM/CK Số tài khoản:
+
+STT Mã hàng Tên hàng hóa, dịch vụ Đơn vị tính Số lượng Đơn giá Thành tiền
+
+A B C D 1 2 3=1x2
+
+1 TL_HITACHI 110 Tủ lạnh Hiachi 110 lít Chiếc 1 8.000.000 8.000.000
+Cộng tiền hàng: 8.000.000
+
+Thuế suất GTGT: 10 % Tiền thuế GTGT: 800.000
+Tổng tiền thanh toán: 8.800.000
+
+Số tiền viết bằng chữ: Tám triệu tám trăm nghìn đồng chẵn.
+
+Người chuyển đổi Người mua hàng Người bán hàng
+(Ký, ghi rõ họ, tên) (Ký, ghi rõ họ, tên) (Ký, ghi rõ họ, tên)
+Lê Thanh Nam Ký bởi: CÔNG TY CỔ PHẦN ABC
+
+Ngày chuyển đổi: 17/10/2017 Ký ngày: Ngày 16 tháng 10 năm 2017
+

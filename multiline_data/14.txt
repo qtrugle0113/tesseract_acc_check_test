@@ -1,0 +1,34 @@
+CÔNG TY TNHH HỢP TÁC ĐÀO TẠO VÀ DỊCH VỤ KẾ TOÁN VIỆT
+
+Mã số thuế (Tax code): 0107467492
+Lê Ánh Địa chỉ (Address): Ngõ 25 đường Đại Nghĩa, Thị Trấn Đại Nghĩa, Huyện Mỹ Đức,
+Thành phố Hà Nội, Việt Nam
+Điện thoại (Tel): 0243 3811555
+Số tài khoản (Bank account): 19130415268868 - NH Techcombank - CN Hà Tây
+
+HÓA ĐƠN GIÁ TRỊ GIA TĂNG Mẫu số (Form no): 01GTKT0/001
+(VAT Invoice) Ký hiệu (Sign): KT/19E
+Bản thể hiện của hóa đơn điện tử
+(E-Invoice viewer) Số (No): 0000010
+Ngày(Date) 28 tháng(month) 12 năm (year) 2019
+
+Họ tên người mua hàng (Buyer): Đoàn Đình Duy Khương
+Tên đơn vị (Company's name): CÔNG TY CỔ PHẦN DƯỢC HẬU GIANG
+Mã số thuế (Tax code): 1800156801
+Địa chỉ (Address): 288 Bis, Nguyễn Văn Cừ - Phường An Hòa - Quận Ninh Kiều - Cần Thơ.
+Hình thức thanh toán (Payment method): TM/CK Số tài khoản (Bank account):
+STT Tên hàng hóa, dịch vụ ĐVT Số lượng Đơn giá Thành tiền
+(No) (Name of goods and services) (Unit) (Quantity) (Unit price) (Amount)
+A B C 1 2 3=1x2
+1 Học phí khóa học xuất nhập khẩu thực tế 1,00 3.500.000 3.500.000
+
+Cộng tiền hàng: (Total before VAT): 3.500.000
+Thuế suất GTGT (VAT rate): 0% Tiền thuế GTGT (VAT mount):
+Tổng tiền thanh toán (Total amount): 3.500.000
+Số tiền viết bằng chữ (Total amount in words) Ba triệu năm trăm nghìn đồng chẵn.
+
+Người mua hàng (Buyer) Người bán hàng (Seller)
+(Ký, ghi rõ họ, tên) (Ký, ghi rõ họ, tên)
+(Signature, full name) (Signature, full name)
+
+t hành bởi phần mềm MeInvoice.vn - Công ty Cổ phần MISA (www.misa.com.vn) - MST: 0101243150
