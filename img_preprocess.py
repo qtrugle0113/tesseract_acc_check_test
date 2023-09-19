@@ -11,7 +11,7 @@ image = cv2.imread(image_path)
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 # Nhị phân hóa ảnh để làm nổi bật văn bản trên nền
-_, binary = cv2.threshold(gray, 20, 100, cv2.THRESH_BINARY)
+_, binary = cv2.threshold(gray, 120, 255, cv2.THRESH_BINARY)
 
 # Tìm các đường viền trong ảnh
 contours, _ = cv2.findContours(binary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
